@@ -2,4 +2,5 @@
 my first #genuary R repo
 
 
+## day 1
 ![day 1](plots/day1.png)

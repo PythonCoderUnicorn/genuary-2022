@@ -7,11 +7,14 @@ library(paletteer)
 library(ggtext)
 library(magick)
 library(imager)
-
+library(ggfx)
 
 font_add_google('Poppins','Poppins')
 showtext_auto()
 
+# theme_void()+
+# theme(legend.position = "none",
+#       panel.background = element_rect(fill = "black"))
 
 df = data.frame(
   x = runif(10e3, min = 0, max=100),

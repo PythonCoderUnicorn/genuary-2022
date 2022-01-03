@@ -9,3 +9,6 @@ https://genuary.art/prompts
 
 ## day 2
 ![day 2](plots/day2.png)
+
+## day 3
+![day 3](plots/day3.png)

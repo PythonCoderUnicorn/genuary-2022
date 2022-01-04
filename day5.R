@@ -12,7 +12,7 @@ library(ggfx)
 font_add_google('Poppins','Poppins')
 showtext_auto()
 
-
+set.seed(420)
 df = data.frame(
   x = rnorm(115, mean = 6, sd=3),
   y= rnorm(115, mean = 6, sd=3)
@@ -29,7 +29,8 @@ df %>%
         panel.background = element_rect(fill = "black"))
 
 
-# 
+# ss
+s
 
 
 

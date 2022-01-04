@@ -29,8 +29,7 @@ df %>%
         panel.background = element_rect(fill = "black"))
 
 
-# ss
-s
+
 
 
 

@@ -12,3 +12,14 @@ https://genuary.art/prompts
 
 ## day 3
 ![day 3](plots/day3.png)
+
+## day 4
+![]()
+
+## day 5
+![day5](plots/day5.png)
+
+
+
+
+

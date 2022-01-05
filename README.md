@@ -26,7 +26,8 @@ https://genuary.art/prompts
 ![day7](plots/day7.png)
 
 
-
+## day 8
+![day 8](plots/day8.png)
 
 
 

@@ -8,6 +8,8 @@ library(ggtext)
 library(magick)
 library(imager)
 library(ggfx)
+library(ggfx)
+library(ggforce)
 
 font_add_google('Poppins','Poppins')
 showtext_auto()

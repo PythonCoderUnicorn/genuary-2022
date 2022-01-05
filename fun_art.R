@@ -26,7 +26,7 @@ df %>%
         y=y,
         col= x)
   )+
-  geom_density_2d()+
+  # geom_density_2d()+
   # geom_bspline_closed()+
   # geom_diagonal(aes(xend= 40, yend=90))+
   # geom_density_2d()+
@@ -35,10 +35,10 @@ df %>%
   # geom_delaunay_segment()+
   # geom_curve(aes(x = 4, y = 10, xend = 90, yend = 10), data = df, curvature = -0.8)+
   # geom_count()+
-  # geom_circle( aes(x0= 2, y0= 4, r= 45))+
+  # geom_circle( aes(x0= 2, y0= 4, r= 45))+ # just dots
   # geom_bspline() +
   # geom_voronoi_tile()+
-  # geom_voronoi_segment()+
+  geom_voronoi_segment()+
   # geom_vline(xintercept = 5:10, colour="green", linetype = "longdash")+
   # geom_violin()+
   # geom_step()+
@@ -49,7 +49,7 @@ df %>%
   # geom_pointrange(aes(ymin=1, ymax=300))+
   # geom_point()+
   # geom_line()+
-  # geom_hex()+
+  # # geom_hex()+
   # geom_curve(aes(xend=1, yend=54))+ # planet curve
   # geom_crossbar(ymin=4, ymax=40)+
   # geom_path()+
@@ -67,6 +67,13 @@ df %>%
 
 
 
+
+
+
+
+
+
+
 ggplot(faithfuld, aes(waiting, eruptions, z = density/30))+ 
   geom_contour()+
   theme_void()+
@@ -76,11 +83,6 @@ ggplot(faithfuld, aes(waiting, eruptions, z = density/30))+
 
 
 
-ggplot(faithfuld, aes())+ 
-  geom_contour()+
-  theme_void()+
-  theme(legend.position = "none",
-        panel.background = element_rect(fill = "black"))
 
 
 
@@ -193,4 +195,117 @@ ggplot(data,
   theme_void()+
   theme(legend.position = "none",
         panel.background = element_rect(fill = "black"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d = data.frame(
+  x1= c(-1,5,2,-5,8), # 1,3,1,5,4   left top
+  x2= c(2,4,7,-9,16), # 2,4,3,4,8
+  y1= c(1,-3,5,7,15), # 1,1,4,1,3   bottom edge
+  y2= c(-2,3,6,4,4) # 2,2,5,3,5    top edge
+  # t= c('a','a','a','b','b'), 
+  # r= c(1,2,3,4,5)
+  )
+
+ggplot(data=d,
+       aes(xmin= x1, # left top
+           xmax= x2, # right top
+           ymin= y1, # bottom edge
+           ymax= y2, # top edge
+           )
+       ) + 
+  geom_rect(color='purple', fill='#47fc71', size=1, alpha=0.7) +
+  theme_void()+
+  theme(legend.position = "none",
+        panel.background = element_rect(fill = "black"))
+
+
+
+
+
+
+
+
+
+
+df3 <- data.frame(
+  x = rep(c(2, 5, 7, 9, 12), 2),
+  y = rep(c(1, 2), each = 5),
+  z = factor(rep(1:5, each = 2)),
+  w = rep(diff(c(0, 4, 6, 8, 10, 14)), 2)
+)
+
+ggplot(df3, 
+       aes(xmin = x * w/2, 
+           xmax = x + w/2, 
+           ymin = y*3, 
+           ymax = y+5,
+           fill = z)
+       ) +
+  geom_rect(colour = "black", size=1)+
+  scale_fill_paletteer_d("beyonce::X10") +
+  theme_void()+
+  theme(legend.position = "none",
+        panel.background = element_rect(fill = "black"))
+
+
+
+
+
+
+df <- expand.grid(x = 0:5, y = 0:5)
+df$z <- runif(nrow(df))
+ggplot(df, aes(x, y, fill = z)) +
+  geom_raster()+
+  scale_fill_paletteer_c("grDevices::PurpOr")+
+  theme_void()+
+  theme(legend.position = "none",
+        panel.background = element_rect(fill = "black"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+circles <- data.frame(
+  x0 = runif(6, 1, 10),
+  y0 = runif(6, 1, 10),
+  r = seq(0.1, 2) # , length.out = 9
+)
+
+# Behold the some circles
+ggplot(data = circles) +
+  geom_circle(aes(x0 = x0, y0 = y0, r = r, fill = r) , alpha= 0.6)+
+  scale_fill_viridis_c(option = 'B')+
+  theme_void()+
+  theme(legend.position = "none",
+        panel.background = element_rect(fill = "black"))
+
+
+
+
 

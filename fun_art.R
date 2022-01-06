@@ -38,14 +38,14 @@ df %>%
   # geom_circle( aes(x0= 2, y0= 4, r= 45))+ # just dots
   # geom_bspline() +
   # geom_voronoi_tile()+
-  geom_voronoi_segment()+
+  # geom_voronoi_segment()+
   # geom_vline(xintercept = 5:10, colour="green", linetype = "longdash")+
   # geom_violin()+
   # geom_step()+
   # geom_spiro(aes(R = 10, r = 3, d = 5)) +
   # geom_arc0(aes(x0= 5, y0=80,r=45,start=4, end=190))+
   # geom_spoke(aes(angle= x*8, radius= x/2))+
-  # geom_segment(aes(xend= -81, yend=7))+ # (3 40) (30 4) (10 4)
+  geom_segment(aes(xend= -81, yend=7))+ # (3 40) (30 4) (10 4)
   # geom_pointrange(aes(ymin=1, ymax=300))+
   # geom_point()+
   # geom_line()+

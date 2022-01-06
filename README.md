@@ -32,7 +32,8 @@ https://genuary.art/prompts
 
 
 
-
+## pixels :: 
+![](plots/pixels.png)
 
 
 

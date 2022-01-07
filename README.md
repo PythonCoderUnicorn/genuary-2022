@@ -59,6 +59,9 @@ https://genuary.art/prompts
 ## day 18 - VHS
 ![VHS](plots/day18.png)
 
+## day 20 - sea of shapes
+![shapes](plots/day20.png)
+
 ## pixels :: 
 ![](plots/pixels.png)
 

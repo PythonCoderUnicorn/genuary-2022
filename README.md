@@ -62,6 +62,9 @@ https://genuary.art/prompts
 ## day 20 - sea of shapes
 ![shapes](plots/day20.png)
 
+## day 23 - abstract vegetation
+![](plots/day23.png)
+
 ## pixels :: 
 ![](plots/pixels.png)
 

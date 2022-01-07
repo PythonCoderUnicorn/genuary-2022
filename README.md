@@ -29,7 +29,20 @@ https://genuary.art/prompts
 ## day 8
 ![day 8](plots/day8.png)
 
+## day 9
+![day 9](plots/day9.png)
 
+## day 10 
+![]()
+
+## day 11 - no computer
+![]()
+
+## day 12 
+![]()
+
+## day 13
+![80x800]()
 
 
 ## pixels :: 

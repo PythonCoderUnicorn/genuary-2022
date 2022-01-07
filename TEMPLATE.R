@@ -14,10 +14,6 @@ library(ggforce)
 font_add_google('Poppins','Poppins')
 showtext_auto()
 
-# theme_void()+
-# theme(legend.position = "none",
-#       panel.background = element_rect(fill = "black"))
-
 df = data.frame(
   x = runif(10e3, min = 0, max=100),
   y= runif(10e3, min = 0, max=100),
@@ -25,7 +21,16 @@ df = data.frame(
 )
 
 
-
+df %>% 
+  ggplot(
+    aes(x=x,
+        y=y,
+        fill= z)
+  )+
+  geom_point()+
+  theme_void()+
+  theme(legend.position = "none",
+        panel.background = element_rect(fill = "black"))
 
 
 

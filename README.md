@@ -50,6 +50,8 @@ https://genuary.art/prompts
 ## day 15 - sand
 ![sand](plots/day15.png)
 
+## day 16 
+![gradients](plots/day16.png)
 
 ## pixels :: 
 ![](plots/pixels.png)

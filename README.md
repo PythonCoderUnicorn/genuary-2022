@@ -44,6 +44,12 @@ https://genuary.art/prompts
 ## day 13
 ![80x800]()
 
+## day 14
+![]()
+
+## day 15 - sand
+![sand](plots/day15.png)
+
 
 ## pixels :: 
 ![](plots/pixels.png)

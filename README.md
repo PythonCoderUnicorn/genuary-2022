@@ -53,6 +53,9 @@ https://genuary.art/prompts
 ## day 16 
 ![gradients](plots/day16.png)
 
+## day 17 - 3 colors
+![3 colors](plots/day17.png)
+
 ## pixels :: 
 ![](plots/pixels.png)
 

@@ -56,6 +56,9 @@ https://genuary.art/prompts
 ## day 17 - 3 colors
 ![3 colors](plots/day17.png)
 
+## day 18 - VHS
+![VHS](plots/day18.png)
+
 ## pixels :: 
 ![](plots/pixels.png)
 

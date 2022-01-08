@@ -10,8 +10,6 @@ library(imager)
 library(ggfx)
 library(ggforce)
 
-font_add_google('Poppins','Poppins')
-showtext_auto()
 
 df = data.frame(
   x = runif(10e3, min = 0, max=100),

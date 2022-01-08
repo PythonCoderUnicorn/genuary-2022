@@ -65,6 +65,9 @@ https://genuary.art/prompts
 ## day 23 - abstract vegetation
 ![](plots/day23.png)
 
+## day 24 - random gen. visual
+![rainbow](plots/day24.png)
+
 ## pixels :: 
 ![](plots/pixels.png)
 

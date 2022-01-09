@@ -71,6 +71,9 @@ https://genuary.art/prompts
 ## day 25 - perspective
 ![grass](plots/day25.png)
 
+## day 26 - airport carpet
+![](plots/day26.png)
+
 ## day 27 - 5 colors
 ![flower](plots/day27.png)
 

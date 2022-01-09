@@ -9,7 +9,7 @@ library(magick)
 library(imager)
 library(ggfx)
 library(ggforce)
-
+library(graphics)
 
 df = data.frame(
   x = runif(10e3, min = 0, max=100),

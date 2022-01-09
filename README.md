@@ -68,6 +68,9 @@ https://genuary.art/prompts
 ## day 24 - random gen. visual
 ![rainbow](plots/day24.png)
 
+## day 25 - perspective
+![grass](plots/day25.png)
+
 ## day 27 - 5 colors
 ![flower](plots/day27.png)
 

@@ -70,7 +70,9 @@ df2 %>%
   
   theme_void()+
   theme(legend.position = "none",
-        panel.background = element_rect(fill = "black"))
+        panel.background = element_rect(fill = "black",
+                                        margin(2,2,2,2, unit = 'cm'))
+        )
   
   
   

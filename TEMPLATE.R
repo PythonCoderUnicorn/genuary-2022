@@ -24,10 +24,11 @@ df %>%
         col= z)
   )+
   geom_point()+
-  scale_color_viridis_c(option = 'C')+
+  scale_color_viridis_c(option = 'B')+
   theme_void()+
   theme(legend.position = "none",
         panel.background = element_rect(fill = "black"))
+
 
 
 
